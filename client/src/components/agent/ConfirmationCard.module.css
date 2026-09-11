@@ -1,0 +1,62 @@
+.card {
+  border: 1px solid var(--amber);
+  background: var(--amber-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-4);
+  max-width: 65ch;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  margin-bottom: var(--space-3);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.row {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.rowLabel {
+  color: var(--ink-soft);
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.rowValue {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--ink);
+}
+
+.contextValue {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.status {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.statusApproved {
+  color: var(--accent-ink);
+}
+
+.statusRejected {
+  color: var(--ink-soft);
+}

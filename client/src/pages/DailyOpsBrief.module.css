@@ -1,0 +1,27 @@
+.generated { color: var(--ink-soft); font-size: var(--text-sm); margin-top: var(--space-2); }
+.metrics { display: grid; gap: var(--space-3); grid-template-columns: repeat(5, minmax(0, 1fr)); margin-bottom: var(--space-6); }
+.metric { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--radius-md); padding: var(--space-4); }
+.metric strong { display: block; font-family: var(--font-display); font-size: var(--text-xl); font-weight: 500; }
+.metric span { color: var(--ink-soft); display: block; font-size: var(--text-xs); font-weight: 600; margin-top: var(--space-1); }
+.grid { display: grid; gap: var(--space-5); grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr); }
+.panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--radius-md); padding: var(--space-5); }
+.panel h2 { font-size: var(--text-lg); margin-bottom: var(--space-4); }
+.action { border-bottom: 1px solid var(--hairline); color: var(--ink); display: block; padding: var(--space-3) 0; text-decoration: none; }
+.action:first-of-type { padding-top: 0; }
+.action:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.action strong { display: block; font-size: var(--text-sm); }
+.action span { color: var(--ink-soft); display: block; font-size: var(--text-sm); margin-top: 2px; }
+.amber strong { color: #795818; }
+.brick strong { color: var(--brick); }
+.quiet { color: var(--ink-soft); font-size: var(--text-sm); }
+.list { display: flex; flex-direction: column; gap: var(--space-3); }
+.row { align-items: baseline; border-bottom: 1px solid var(--hairline); display: flex; gap: var(--space-3); justify-content: space-between; padding-bottom: var(--space-3); }
+.row:last-child { border-bottom: 0; padding-bottom: 0; }
+.row strong { font-size: var(--text-sm); }
+.row span { color: var(--ink-soft); font-size: var(--text-xs); }
+.stageRows { display: grid; gap: var(--space-2); }
+.stageRow { align-items: center; display: grid; gap: var(--space-3); grid-template-columns: 1fr 32px; }
+.stageRow span { color: var(--ink-soft); font-size: var(--text-sm); }
+.stageRow b { font-family: var(--font-mono); font-size: var(--text-sm); text-align: right; }
+@media (max-width: 1050px) { .metrics { grid-template-columns: repeat(3, 1fr); } .grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .metrics { grid-template-columns: repeat(2, 1fr); } }
